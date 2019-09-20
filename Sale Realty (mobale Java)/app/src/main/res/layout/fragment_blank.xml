@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlankFragment"
+    android:background="@color/colorAboInfBg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="22dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAboInfBg"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/progressBar">
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </RelativeLayout>
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="56dp"-->
+        <!--android:background="@color/colorOreg">-->
+
+        <!--</RelativeLayout>-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorOreg"
+            app:title="Избранное"
+            app:titleMarginStart="150dp"
+            >
+
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/swipeRefresh">
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView">
+
+        </com.baoyz.swipemenulistview.SwipeMenuListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/not_find_error"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Нечего не найдено"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="@color/colorMainText"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

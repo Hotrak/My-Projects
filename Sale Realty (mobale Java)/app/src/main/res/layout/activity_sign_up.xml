@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_up"
+    android:background="#140936">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/upEmail"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="5dp"
+
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text=""
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/upLogin"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="5dp"
+
+        android:hint="Имя"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text=""
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upEmail" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/upPhone"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="5dp"
+
+        android:hint="Телефон"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text=""
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upLogin" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/upPass1"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="5dp"
+        android:hint="Пароль"
+
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text=""
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upPhone" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/upPass2"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="5dp"
+        android:hint="Пароль"
+
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text=""
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upPass1" />
+
+
+    <Button
+        android:id="@+id/buttonUP"
+        android:layout_width="330dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/my_button_bg"
+        android:text="Создать аккаунт"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upPass2" />
+
+
+    <TextView
+        android:id="@+id/signIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:text="Войти"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUP" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Частное лицо"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="21dp" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ИП\\Компания"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="21dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

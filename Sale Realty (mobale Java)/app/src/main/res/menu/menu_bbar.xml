@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/m_add_photo"
+        android:icon="@drawable/ic_favorite_white_24dp"
+        android:title="Añadir foto"
+        android:onClick="addPhoto"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/m_search"
+        android:icon="@drawable/ic_person_withe_24dp"
+        android:title="Buscar"
+        android:onClick="accaunt"
+        app:showAsAction="always" />
+</menu>

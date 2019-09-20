@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".serchActivity"
+    android:focusableInTouchMode="true"
+    android:id="@+id/addRoot"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAboInfBg"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="56dp"-->
+                    <!--android:background="@color/colorOreg"-->
+                    <!--&gt;-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:textColor="#FFFFFF"-->
+                        <!--android:text="Очистить"-->
+                        <!--android:textSize="20dp"/>-->
+                <!--</LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:elevation="3dp"
+                    android:background="#132E6B"
+                    android:orientation="horizontal"
+                    android:id="@+id/typeDialButton"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/dealbig"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:text="Вид сделки"
+                            android:layout_margin="8dp"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorMainText"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Не выбран"
+                        android:id="@+id/typeDial"
+                        android:layout_margin="8dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorOreg"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:elevation="3dp"
+                    android:background="#132E6B"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/areaButton">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/area"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:text="Область"
+                            android:layout_margin="8dp"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorMainText"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Не выбрана"
+                        android:layout_margin="8dp"
+                        android:textSize="20dp"
+                        android:id="@+id/area"
+                        android:textColor="@color/colorOreg"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:elevation="3dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:orientation="horizontal"
+                    android:id="@+id/regeonButton">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/region"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:text="Регион"
+                            android:layout_margin="8dp"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorMainText"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Не выбран"
+                        android:layout_margin="8dp"
+                        android:textSize="20dp"
+                        android:id="@+id/regeon"
+                        android:textColor="@color/colorOreg"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:paddingHorizontal="5dp">
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorMainText"
+                            android:layout_weight="1"
+                            android:textSize="18dp"
+                            android:text="Цена"/>
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            app:backgroundTint="#ffffff"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:hint="От"
+                            android:id="@+id/price1"
+                            android:inputType="numberDecimal"
+                            />
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            app:backgroundTint="#ffffff"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:hint="До"
+                            android:id="@+id/price2"
+                            android:inputType="numberDecimal"
+                            />
+                    </LinearLayout>
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorMainText"
+                            android:layout_weight="1"
+                            android:textSize="18dp"
+                            android:text="Кол-во комнат"/>
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            app:backgroundTint="#ffffff"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:hint="От"
+                            android:id="@+id/rumCount1"
+                            android:inputType="numberDecimal"
+                            />
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            app:backgroundTint="#ffffff"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:hint="До"
+                            android:id="@+id/rumCount2"
+                            android:inputType="numberDecimal"
+                            />
+                    </LinearLayout>
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorMainText"
+                            android:layout_weight="1"
+                            android:textSize="18dp"
+                            android:text="Кол-во этажей"/>
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            app:backgroundTint="#ffffff"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:hint="От"
+                            android:id="@+id/atajCount1"
+                            android:inputType="numberDecimal"
+                            />
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            app:backgroundTint="#ffffff"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:hint="До"
+                            android:id="@+id/atajCount2"
+                            android:inputType="numberDecimal"
+                            />
+                    </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorMainText"
+                                android:layout_weight="1"
+                                android:textSize="18dp"
+                                android:text="Этаж"/>
+                            <EditText
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                app:backgroundTint="#ffffff"
+                                android:textColor="#ffffff"
+                                android:textColorHint="#ffffff"
+                                android:hint="От"
+                                android:id="@+id/ataj1"
+                                android:inputType="numberDecimal"
+                                />
+                            <EditText
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                app:backgroundTint="#ffffff"
+                                android:textColor="#ffffff"
+                                android:textColorHint="#ffffff"
+                                android:hint="До"
+                                android:id="@+id/ataj2"
+                                android:inputType="numberDecimal"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAboInfBg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/typeRealatyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Недвижимость"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/typeRealatyText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:text="Неважно"
+                        android:textColor="@color/colorOreg"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/typeHoseButton">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Тип дома"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:text="Неважно"
+                        android:textColor="@color/colorOreg"
+                        android:textSize="20dp"
+                        android:id="@+id/typeHose"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/typeRemButton">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Ремонт"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:text="Неважно"
+                        android:id="@+id/typeRem"
+                        android:textColor="@color/colorOreg"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/typePlanButton">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Планировка"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:text="Неважно"
+                        android:id="@+id/typePlan"
+                        android:textColor="@color/colorOreg"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:paddingHorizontal="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorMainText"
+                            android:layout_weight="1"
+                            android:textSize="18dp"
+                            android:text="Общ. площадь"/>
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            app:backgroundTint="#ffffff"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:hint="От"
+                            android:id="@+id/ouerArea1"
+                            android:inputType="numberDecimal"
+                            />
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            app:backgroundTint="#ffffff"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:hint="До"
+                            android:id="@+id/ouerArea2"
+                            android:inputType="numberDecimal"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorMainText"
+                            android:layout_weight="1"
+                            android:textSize="18dp"
+                            android:text="Жил. площадь"/>
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            app:backgroundTint="#ffffff"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:hint="От"
+                            android:id="@+id/liveArea1"
+                            android:inputType="numberDecimal"
+                            />
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            app:backgroundTint="#ffffff"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:hint="До"
+                            android:id="@+id/liveArea2"
+                            android:inputType="numberDecimal"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorMainText"
+                            android:layout_weight="1"
+                            android:textSize="18dp"
+                            android:text="Кух. площадь"/>
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            app:backgroundTint="#ffffff"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:hint="От"
+                            android:id="@+id/kykArea1"
+                            android:inputType="numberDecimal"
+                            />
+                        <EditText
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            app:backgroundTint="#ffffff"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:hint="До"
+                            android:id="@+id/kykArea2"
+                            android:inputType="numberDecimal"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/mebel" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Мебель"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mebCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/kitchen" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Кухонная мебель"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/kykMebCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/freezer" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Холодильник"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/frizCheck"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/washing" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Стиральная машина"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/woshMashinCheck"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/internet" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Интернет"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/inetCheck"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/conditioner" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Кондиционер"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/kondicCheck"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/balcony" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Балкон или лоджа"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/balconCheck"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorOreg"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomButton"
+        android:gravity="center"
+        android:padding="5dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:textColor="#FFFFFF"
+        android:text="Показать(125)"
+        android:textSize="20dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

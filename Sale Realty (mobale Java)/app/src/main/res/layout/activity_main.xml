@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#232c4b"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAboInfBg"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/progressBar">
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </RelativeLayout>
+
+
+    <com.google.android.material.circularreveal.CircularRevealFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-22dp"
+        android:id="@+id/frame">
+
+
+    </com.google.android.material.circularreveal.CircularRevealFrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/txt" />-->
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+
+        android:id="@+id/bar"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+
+        app:hideOnScroll="true"
+        app:layout_scrollFlags="scroll|enterAlways"
+
+        app:fabCradleMargin="12dp"
+        app:fabCradleVerticalOffset="0dp"
+        app:fabCradleRoundedCornerRadius="24dp"
+        app:backgroundTint="#262f5d"
+        app:fabAlignmentMode="center"
+        app:navigationIcon="@drawable/ic_home_black_24dp"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="#FF6700"
+        app:elevation="0dp"
+        app:layout_anchor="@id/bar"
+        />
+
+    <!--<Switch-->
+        <!--android:id="@+id/switch1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="Ocultar/Mostrar FAB" />-->
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

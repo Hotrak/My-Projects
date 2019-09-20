@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp">
+       <ImageView
+           android:id="@+id/userImage"
+           android:layout_width="80dp"
+           android:layout_height="100dp"
+           android:scaleType="fitXY"
+           android:adjustViewBounds="true"
+           android:padding="2dp"
+           android:src="@drawable/ded">
+
+       </ImageView>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:paddingHorizontal="10dp">
+           <TextView
+               android:id="@+id/login"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="EXTAZE"
+               android:textSize="20dp"
+               android:textColor="@color/colorMainText"
+               android:paddingBottom="5dp"/>
+           <TextView
+               android:id="@+id/coment"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/imageView"
+               android:layout_marginTop="0dp"
+               android:text="Телефон за свои деньги хороший, НО очень маркий пластик, отпечатки на сканере долго распознаются, был телефон самсунг А5 (2017) там гораздо быстрее было. Когда ложишь на стол или просто постукиваешь по задней крышке, то у меня дребезжит, возможно лоток от сим-карт, но звук очень неприятныйил перезагрузкой. Динамик громкий."
+               android:textColor="@color/colorText"
+               android:textSize="19dp"
+               />
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+</LinearLayout>

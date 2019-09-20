@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addActivity"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:id="@+id/addRoot">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorOreg"
+        android:elevation="4dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:text="Подача объявления"
+            android:textSize="20dp"/>
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/ic_close_black_24dp"/>-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="0dp">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="17dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:id="@+id/loadImageButton"
+                    >
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/list_item_bg"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/photo1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/empty_photo"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/list_item_bg"
+                        >
+
+                        <ImageView
+                            android:id="@+id/photo2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/empty_photo"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/list_item_bg"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/photo3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/empty_photo"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/list_item_bg"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/photo4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/empty_photo"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/list_item_bg"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/photo5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/empty_photo"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/list_item_bg"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/photo6"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/empty_photo"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/list_item_bg"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/photo7"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/empty_photo"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/list_item_bg"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/photo8"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/empty_photo"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/list_item_bg"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/photo9"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/empty_photo"/>
+                    </RelativeLayout>
+
+
+
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorAboInfBg"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:elevation="3dp"
+                    android:background="#132E6B"
+                    android:orientation="horizontal"
+                    android:id="@+id/typeDialButton"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/dealbig"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:text="Вид сделки"
+                            android:layout_margin="8dp"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorMainText"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Не выбран"
+                        android:id="@+id/typeDial"
+                        android:layout_margin="8dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorOreg"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:elevation="3dp"
+                    android:background="#132E6B"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/areaButton">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/area"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:text="Область"
+                            android:layout_margin="8dp"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorMainText"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Не выбрана"
+                        android:layout_margin="8dp"
+                        android:textSize="20dp"
+                        android:id="@+id/area"
+                        android:textColor="@color/colorOreg"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:elevation="3dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:orientation="horizontal"
+                    android:id="@+id/regeonButton">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/region"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:text="Регион"
+                            android:layout_margin="8dp"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorMainText"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Не выбран"
+                        android:layout_margin="8dp"
+                        android:textSize="20dp"
+                        android:id="@+id/regeon"
+                        android:textColor="@color/colorOreg"
+                        />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:hint="Цена (BYN)"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/price"
+                    android:inputType="numberDecimal"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:hint="Город"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/town" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:hint="Улица"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ylica"
+                    android:inputType="text"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:hint="Кол-во комнат"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/rumCount"
+                    android:inputType="number"
+                    android:maxLength ="3"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:hint="Кол-во этажей"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/atajCount"
+                    android:inputType="number"
+                    android:maxLength ="3"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:hint="Этаж"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ataj"
+                    android:inputType="number"
+                    android:maxLength ="3"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:hint="Год постройки"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:id="@+id/yer"
+                    android:maxLength ="4"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAboInfBg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/typeRealatyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Недвижимость"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/typeRealatyText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:text="Не выбран"
+                        android:textColor="@color/colorOreg"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/typeHoseButton">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Тип дома"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:text="Не выбран"
+                        android:textColor="@color/colorOreg"
+                        android:textSize="20dp"
+                        android:id="@+id/typeHose"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/typeRemButton">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Ремонт"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:text="Не выбран"
+                        android:id="@+id/typeRem"
+                        android:textColor="@color/colorOreg"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/typePlanButton">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Планировка"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:text="Не выбран"
+                        android:id="@+id/typePlan"
+                        android:textColor="@color/colorOreg"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Общая площадь"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    app:backgroundTint="#ffffff"
+                    android:id="@+id/ouerArea"
+                    android:maxLength ="4"
+                    android:inputType="numberDecimal"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Жилая площадь"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    app:backgroundTint="#ffffff"
+                    android:maxLength ="4"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/liveArea"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Площадь кухни"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    app:backgroundTint="#ffffff"
+                    android:id="@+id/kykArea"
+                    android:maxLength ="4"
+                    android:inputType="numberDecimal"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/mebel" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Мебель"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mebCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/kitchen" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Кухонная мебель"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/kykMebCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/freezer" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Холодильник"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/frizCheck"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/washing" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Стиральная машина"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/woshMashinCheck"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/internet" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Интернет"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/inetCheck"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/conditioner" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Кондиционер"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/kondicCheck"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#132E6B"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/balcony" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_margin="8dp"
+                            android:text="Балкон или лоджа"
+                            android:textColor="@color/colorMainText"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/balconCheck"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#ffffff"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:hint="Описание"
+                android:layout_marginTop="10dp"
+                android:id="@+id/dicriprion" />
+        </LinearLayout>
+
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAboInfBg"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/progressBar">
+        <ProgressBar
+
+            style="?android:attr/progressBarStyle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            />
+        <!--<pl.droidsonroids.gif.GifImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/loading_gif"/>-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorOreg"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomButton"
+        android:gravity="center"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:text="Подать объявление"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

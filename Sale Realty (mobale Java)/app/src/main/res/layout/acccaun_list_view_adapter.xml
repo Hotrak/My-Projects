@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="7dp"
+    >
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/empty_heart"
+        android:layout_marginRight="10dp"
+        android:id="@+id/icon"
+        />
+<TextView
+    android:padding="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Мои объявления"
+    android:textColor="@color/colorMainText"
+    android:textSize="20dp"
+    android:layout_weight="1"
+
+    android:id="@+id/accauntButtonName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorOreg"
+        android:text="+375293956378"
+        android:textSize="20dp"
+        android:paddingRight="10dp"
+        android:id="@+id/accauntText"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:background="@drawable/accaut_counter"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/countLayout"
+        android:visibility="gone"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="12"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textColor="@color/colorMainText"
+            android:id="@+id/countView"
+            />
+    </LinearLayout>
+</LinearLayout>
